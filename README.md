@@ -9,7 +9,7 @@ O objetivo é organizar os conteúdos produzidos durante a residência em uma es
 
 Abaixo estão listadas as disciplinas da residência. Cada item será um link para a respectiva pasta com materiais e projetos:
 
-* [Introdução a Ciência de Dados](./)
+* [Introdução à Ciência de Dados](./)
 * [Tecnologias em Processos de Negócios](./)
 * [Programação para Ciência de Dados](./)
 * [Banco de Dados Não Convencionais](./)
