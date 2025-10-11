@@ -295,7 +295,6 @@ Problemas que usam recursão:
 #### Diferença entre args e *args em Python
 
 
-
 | Sintaxe         | Significado                                         | Exemplo                                       | Dentro da função |
 | --------------- | --------------------------------------------------- | --------------------------------------------- | ---------------- |
 | `args`          | Variável comum                                      | `def f(args): print(args)` → `f(10)`          | `10`             |
@@ -305,17 +304,32 @@ Problemas que usam recursão:
 
 </div>
 
+"*args" em Python permite que uma função receba um número variável de argumentos posicionais, que são coletados em uma tupla. Isso é útil quando você não sabe quantos argumentos serão passados para a função, tornando-a mais flexível. O nome args é uma convenção, mas o asterisco antes da variável é obrigatório. 
 
 
 
 
+<div align="center">
+  
+#### Funções Especiais
+
+| Função                      | Descrição básica                                                                                                                                                    | Exemplo de uso                                  | Saída                            |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------- | :------------------------------- |
+| `range(início, fim, passo)` | Gera uma sequência de números inteiros. O **início** define de onde começar, o **fim** é o limite (não incluído) e o **passo** indica o intervalo entre os números. | `list(range(0, 10, 2))`                         | `[0, 2, 4, 6, 8]`                |
+| `lambda`                    | Cria funções anônimas (sem nome) em uma única linha.                                                                                                                | `dobro = lambda x: x * 2` <br> `dobro(5)`       | `10`                             |
+| `map()`                     | Aplica uma função a cada item de um iterável.                                                                                                                       | `list(map(lambda x: x**2, [1, 2, 3]))`          | `[1, 4, 9]`                      |
+| `filter()`                  | Filtra elementos de um iterável com base em uma condição.                                                                                                           | `list(filter(lambda x: x > 0, [-2, 3, -1, 4]))` | `[3, 4]`                         |
+| `enumerate()`               | Retorna índices e valores de um iterável.                                                                                                                           | `list(enumerate(['a', 'b', 'c']))`              | `[(0, 'a'), (1, 'b'), (2, 'c')]` |
+| `zip()`                     | Une duas ou mais listas em pares correspondentes.                                                                                                                   | `list(zip([1, 2], ['a', 'b']))`                 | `[(1, 'a'), (2, 'b')]`           |
+
+</div>
 
 
 
 
 
 ---
-### Exercícios
+### Exercícios da Lista 1
 
 #### Introduzindo Operações Básicas com Tipos Numéricos e Booleanos
 
@@ -776,6 +790,155 @@ print(resultado)
 ```
 
 #### Funções Especiais
+
+29 - Utilize a função range para criar uma lista de números inteiros que vai de 100 a -100, seguindo uma ordem decrescente e com intervalos de duas unidades. Exiba a lista gerada.
+
+```python
+def soma_total(*args):
+    return sum(args)
+
+resultado = soma_total(3, 7, 10, 5)
+print(resultado)
+```
+
+
+30 - Uma pesquisa de satisfação dos empregados de uma determinada empresa reuniu dados referente a um questionário no qual foi computado o nível de satisfação do empregado em relação ao salário recebido. Os valores salariais estão armazenados na variável 'salarios' e pontuação do questionário está armazenada na variável 'satisfacao_empregado'. 
+
+```python
+salarios = [1000, 1500, 2000, 2500, 3000, 3500]
+satisfacao_empregados = [40, 50, 60, 70, 80, 90]
+```
+
+Realize os seguintes procedimentos:
+
+- A partir da lista satisfacao_empregados, gere uma nova lista com valores normalizados entre 0 e 1. Fórmula para normalização:
+ 
+$$
+x_i^{(norm)} = \frac{x_i - x_{min}}{x_{max} - x_{min}}
+$$
+
+```python
+normalizar = lambda lista: list(map(lambda x: (x - min(lista)) / (max(lista) - min(lista)), lista))
+satisfacao_empregados_normalizado = normalizar(satisfacao_empregados)
+```
+
+Esse código pega uma lista de números, descobre o menor e o maior, e transforma todos os valores para ficarem entre 0 e 1, usando uma função rápida feita com lambda.
+
+| Parte do código                                | O que faz                                  |
+| :--------------------------------------------- | :----------------------------------------- |
+| `lambda lista:`                                | Cria uma função que recebe uma lista       |
+| `map(lambda x: ..., lista)`                    | Aplica uma fórmula em cada item da lista   |
+| `(x - min(lista)) / (max(lista) - min(lista))` | Calcula o valor normalizado de `x`         |
+| `list(...)`                                    | Converte o resultado para uma lista normal |
+
+
+- Crie a seguinte função:  ```f(x)=0.0004x−0.4```. A função recebe como entrada um unico número inteiro. Use lambda para definir essa função.
+
+```python
+f = lambda x: 0.0004 * x - 0.4
+```
+
+OBS: lambda é uma forma curta de criar uma função anônima, ou seja, sem usar def. Se fosse escrita com def, ficaria assim:
+
+```python
+def f(x):
+    return 0.0004 * x - 0.4
+```
+
+- Utilize a função criada no passo anterior para criar uma nova lista a partir da lista 'salarios'. Armazene-a em uma variável denominada 'satisfacao_estimada'.
+
+```python
+satisfacao_estimada = list(map(f, salarios))
+```
+
+| Parte do código       | O que faz                                               |
+| :-------------------- | :------------------------------------------------------ |
+| `map(f, salarios)`    | Aplica a função `f` a cada elemento da lista `salarios` |
+| `list(...)`           | Converte o resultado em uma lista                       |
+| `satisfacao_estimada` | Guarda a nova lista de resultados calculados            |
+
+
+- Crie uma função que receba como entrada duas listas e compute a Fórmula do Erro Quadrático Médio (EQM). Assuma que  n  seja o número de elementos de qualquer uma das listas e  ```a```  e  ```b```  correspondam a valores das listas em uma mesma posição  ```i``` .
+
+$$
+EQM = \frac{1}{n} \sum_{i=0}^{n} (a_i - b_i)^2
+$$
+
+```python
+erro_medio = lambda a, b: (1 / len(a)) * sum(map(lambda x, y: (x - y) ** 2, a, b))
+```
+
+**Código da questão 30 completo:**
+
+```python
+salarios = [1000, 1500, 2000, 2500, 3000, 3500]
+satisfacao_empregados = [40, 50, 60, 70, 80, 90]
+
+# Insira abaixo a funcao para normalizar a lista satisfacao_empregados
+normalizar = lambda lista: list(map(lambda x: (x - min(lista)) / (max(lista) - min(lista)), lista))
+satisfacao_empregados_normalizado = normalizar(satisfacao_empregados)
+
+# Insira abaixo a funcao para calcular a satisfacao
+f = lambda x: 0.0004 * x - 0.4
+
+# passo 3
+satisfacao_estimada = list(map(f, salarios))
+
+# Insira a funcao para calcular o erro quadratico minimo
+erro_medio = lambda a, b: (1 / len(a)) * sum(map(lambda x, y: (x - y) ** 2, a, b))
+
+print (erro_medio(satisfacao_empregados_normalizado, satisfacao_estimada))
+```
+
+31 - A partir da lista definida abaixo, filtre-a de forma que somente as palavras com menos de 3 caracteres sejam mantidas.
+
+```python
+lista = ['tempor', 'erat,', 'in,', 'elit', 'Etiam', 'tincidunt.', 'rutrum', 'ut,', 'lacinia', 'Integer', 'Nam', 'turpis', 'Nulla', 'non.', 'vehicula', 'diam', 'porttitor', 'blandit', 'Sed', 'pharetra', 'erat', 'hendrerit', 'tristique', 'vulputate', 'faucibus.', 'augue.', 'potenti.', 'vel', 'eros', 'imperdiet,', 'a.', 'dolor.', 'pretium', 'Fusce', 'sit', 'ornare', 'Morbi', 'quis', 'fringilla', 'lobortis', 'tempus', 'mauris', 'ante,', 'lacus', 'porta.', 'faucibus,', 'quis.', 'vestibulum', 'primis', 'luctus,', 'ullamcorper.', 'augue', 'nec', 'mollis', 'lectus', 'dolor', 'sodales', 'ligula,', 'dignissim', 'sem', 'varius', 'mi', 'eu', 'elit.', 'semper', 'id,', 'tempus.', 'finibus.', 'neque', 'quam.', 'scelerisque', 'lorem', 'diam,', 'Cras', 'nisi', 'Lorem', 'leo,', 'Ut', 'ut', 'feugiat.', 'ante', 'venenatis', 'fermentum', 'congue', 'urna', 'Praesent', 'Donec', 'Vestibulum', 'purus.', 'Nullam', 'tincidunt', 'efficitur', 'velit', 'commodo.', 'iaculis', 'sed,', 'volutpat', 'amet', 'mauris.', 'odio', 'a', 'Interdum', 'neque.', 'risus', 'vitae', 'consectetur', 'adipiscing', 'at', 'Aliquam', 'molestie', 'euismod', 'odio.', 'sed', 'in', 'suscipit', 'augue,', 'sapien', 'posuere', 'euismod,', 'ipsum', 'et.', 'maximus.', 'risus,', 'Suspendisse', 'et', 'facilisis', 'elementum', 'efficitur,', 'ac', 'nulla.', 'quam', 'arcu', 'fames', 'Nunc', 'pharetra,', 'laoreet', 'ligula', 'fermentum,', 'auctor', 'tortor,', 'Curabitur', 'eget', 'finibus', 'ultrices', 'malesuada', 'purus', 'congue,', 'amet,', 'fermentum.', 'dui']
+
+# Insira a resposta abaixo.
+palavras_curta = list(filter(lambda palavra: len(palavra) < 3, lista))
+
+print (palavras_curta)
+# Resposta esperada: ['a.', 'mi', 'eu', 'Ut', 'ut', 'a', 'at', 'in', 'et', 'ac']
+```
+
+32 - A partir da lista definida abaixo, gere automaticamente e exiba um dicionário enumerado do tipo:
+
+| dicionario = {0: 'Preprocessing', 1: 'Feature Extraction', 2: 'Feature Selection' ...}
+
+Em seguida, gere a seguinte saída:
+
+Step 1 - Preprocessing
+Step 2 - Feature Extraction
+Step 3 - Feature Selection
+Step 4 - Classification
+Step 5 - Post Processing
+
+```python
+lst = ["Preprocessing", "Feature Extraction", "Feature Selection", "Classification", "Post Processing"]
+
+# Insira a resposta abaixo.
+dicionario = dict(enumerate(lst))
+print(dicionario)
+
+for i, etapa in enumerate(lst, start=1):
+    print (f"\nStep {i} - {etapa}")
+```
+
+33 - Realize os seguintes procedimentos:
+- Crie uma lista de números inteiros de 1 a 4 com incremento de 1 em 1.
+- Crie uma lista contendo quatro strings.
+- Utilize uma única estrutura de repetição do tipo for para iterar paralelamente sobre os quatro elementos de cada uma das duas listas. Exiba os elementos.
+
+```python
+numeros = list(range(1, 5))
+
+palavras = ["um", "dois", "três", "quatro"]
+
+for numero, palavra in zip(numeros, palavras):
+    print (numero, palavra)
+```
+
 
 
 ---
