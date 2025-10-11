@@ -260,7 +260,7 @@ for i in range(10):
 
 # Usando List Comprehension
 lista = [i for i in range(10)]
-print(lista)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print (lista)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 Exemplo 2: criar uma lista com os quadrados dos números de 0 a 4
@@ -273,8 +273,39 @@ for i in range(5):
 
 # Usando List Comprehension
 quadrados = [i ** 2 for i in range(5)]
-print(quadrados)  # [0, 1, 4, 9, 16]
+print (quadrados)  # [0, 1, 4, 9, 16]
 ```
+
+<div align="center">
+
+#### Recursividade em Python
+
+</div>
+
+Recursividade é quando uma função chama ela mesma para resolver um problema menor do mesmo tipo.
+
+Problemas que usam recursão:
+1. Fatorial de um número *(Ex: 5! = 5 × 4 × 3 × 2 × 1)*
+2. Sequência de Fibonacci *(0, 1, 1, 2, 3, 5, 8, ...)*
+3. Contagem regressiva ou progressiva *(chama a função até chegar ao número final.)*
+
+
+<div align="center">
+
+#### Diferença entre args e *args em Python
+
+
+
+| Sintaxe         | Significado                                         | Exemplo                                       | Dentro da função |
+| --------------- | --------------------------------------------------- | --------------------------------------------- | ---------------- |
+| `args`          | Variável comum                                      | `def f(args): print(args)` → `f(10)`          | `10`             |
+| `*args`         | Recebe vários argumentos e os empacota em uma tupla | `def f(*args): print(args)` → `f(10, 20, 30)` | `(10, 20, 30)`   |
+| `*` (ao chamar) | Desempacota lista ou tupla em vários argumentos     | `valores = [1, 2, 3]` → `f(*valores)`         | `1, 2, 3`        |
+
+
+</div>
+
+
 
 
 
@@ -307,7 +338,7 @@ b = 4
 c = 8
 
 resultado = a**2 + (3/4) * b * 987 * (c - (10**-9) / math.sqrt(0.5**3))
-print(resultado)
+print (resultado)
 ```
 
 2 - Armazene em uma variável o resto da divisão da expressão anterior por 23691.
@@ -713,6 +744,38 @@ print (lista_negativos)
 
 
 
+#### Funções
+
+27 - Crie uma função que calcule o fatorial de um número passado como argumento. Caso o número seja negativo, retorne um valor nulo. Caso positivo, retorne o resultado do fatorial. Dica: utilize recursividade e lembre-se de considerar que o fatorial de 0 é 1.
+
+```python
+numero = int(input("Digite o número: "))
+
+def fatorial(n):
+    if n < 0:
+      # caso o número seja negativo, retorne um valor nulo
+        return None
+    elif n == 0:
+      # lembre-se de considerar que o fatorial de 0 é 1
+      return 1
+    else:
+      # caso positivo, retorne o resultado do fatorial
+      return n * fatorial(n - 1)
+
+print(fatorial(numero)) 
+```
+
+28 - Define uma função que receba um número arbitrário de argumentos e retorne a sua soma. Exiba o resultado de uma chamada dessa função passando como argumentos números inteiros.
+
+```python
+def soma_total(*args):
+    return sum(args)
+
+resultado = soma_total(3, 7, 10, 5)
+print(resultado)
+```
+
+#### Funções Especiais
 
 
 ---
