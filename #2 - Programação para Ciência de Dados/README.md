@@ -430,17 +430,19 @@ print (f"A letra S aparece {count_s} vez(es) na frase")
 8 - Concatene duas variáveis do tipo strings com valores arbitrários e exiba o resultado.
 
 ```python
-fruta = "maçã"
+fruta = "banana"
 cor = "verde"
 
-resultado = fruta + " " + cor
-print (resultado)
+concatenacao = fruta + " " + cor
+print (concatenacao)
 ```
 
 9 - Utilize a indexação e exiba apenas do segundo ao quarto caractere da variável do tipo string resultante da questão imediatamente anterior.
 
 ```python
-print (resultado[1:4])
+# 0=b 1=a 2=n 3=a 4=n 5=a 6=" " 7=v 8=e 9=r 10=d 11=e
+# o último número é o ponto de parada, não de inclusão
+print (concatenacao[1:5]) 
 ```
 
 
@@ -794,11 +796,8 @@ print(resultado)
 29 - Utilize a função range para criar uma lista de números inteiros que vai de 100 a -100, seguindo uma ordem decrescente e com intervalos de duas unidades. Exiba a lista gerada.
 
 ```python
-def soma_total(*args):
-    return sum(args)
-
-resultado = soma_total(3, 7, 10, 5)
-print(resultado)
+for i in range(-100, 101, 2):
+  print (i)
 ```
 
 
