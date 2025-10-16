@@ -1,28 +1,18 @@
-# Residência em Ciência de Dados e Analytics - POLI/UPE
+###### PT
 
-Este repositório reúne projetos, exercícios e materiais desenvolvidos ao longo da **Residência em Ciência de Dados e Analytics da Universidade de Pernambuco (UPE)**.
-O objetivo é organizar os conteúdos produzidos durante a residência em uma estrutura clara e acessível, de modo que cada disciplina tenha seu próprio espaço com materiais de apoio, notebooks, datasets e relatórios.
+# Introdução à Ciência de Dados
 
----
+Disciplina voltada a apresenta os conceitos essenciais da área, oferecendo uma visão geral sobre o ciclo completo de trabalho com dados, desde a coleta e preparação até a análise e comunicação de resultados. Serve como base para as demais disciplinas da residência incluindo um projeto prático como forma de avaliação.
 
-## Estrutura do Repositório
+* **Professor:** [*Alexandre Magno*](http://lattes.cnpq.br/6152592335669549)
+* **CH:** 15h
 
-Abaixo estão listadas as disciplinas da residência. Cada item será um link para a respectiva pasta com materiais e projetos:
 
-* [Introdução a Ciência de Dados](./)
-* [Tecnologias em Processos de Negócios](./)
-* [Programação para Ciência de Dados](./)
-* [Banco de Dados Não Convencionais](./)
-* [Análise e Transformação de Dados](./)
-* [Estatística Computacional](./)
-* [Cloud Computing](./)
-* [Aprendizado de Máquina Não Supervisionado](./)
-* [Aprendizado de Máquina Supervisionado](./)
-* [Big Data](./)
-* [Análise de Séries Temporais](./)
-* [Processamento de Linguagem Natural](./)
-* [Projeto de Ciência de Dados](./)
+O projeto desenvolvido durante a disciplina pode ser consultado [aqui](https://github.com/johnnycleiton07/pima-indians-diabetes-dataset).
 
 ---
 
-✍️ **Observação:** Este repositório é de caráter **educacional** e serve como documentação de estudo e prática.
+## 📜 Licença
+Este repositório é de uso **educacional e livre**, podendo ser utilizado e modificado conforme necessidade, desde que citada a fonte.
+
+
