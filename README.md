@@ -11,7 +11,7 @@ Abaixo estão listadas as disciplinas da residência, organizadas em ordem de cu
 
 * [Introdução à Ciência de Dados](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/%231%20-%20Introdu%C3%A7%C3%A3o%20a%20Ci%C3%AAncia%20de%20Dados)
 * [Programação para Ciência de Dados](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/%232%20-%20Programa%C3%A7%C3%A3o%20para%20Ci%C3%AAncia%20de%20Dados)
-* Tecnologias em Processos de Negócios
+* [Tecnologias em Processos de Negócios](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/%233%20-%20Tecnologias%20em%20Processos%20de%20Neg%C3%B3cios)
 * Banco de Dados Não Convencionais
 * Análise e Transformação de Dados
 * Estatística Computacional
