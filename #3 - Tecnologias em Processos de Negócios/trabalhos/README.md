@@ -8,7 +8,7 @@ A modelagem BPMN (*Business Process Model and Notation*) é uma metodologia visu
 
 <div align="center">
   
-| ![Processo de Aprovação de Férias](./processo_de_aprovacao_de_ferias) |
+| ![Processo de Aprovação de Férias](./processo_de_aprovacao_de_ferias.png) |
 |:--:|
 | *Processo de Aprovação de Férias* |
 
