@@ -4,6 +4,16 @@
 
 ## Modelagem BPMN
 
+A modelagem BPMN (*Business Process Model and Notation*) é uma metodologia visual usada para representar de forma clara e padronizada os processos de negócio de uma organização. Por meio de diagramas com símbolos específicos, ela facilita o entendimento, a análise e a melhoria dos fluxos de trabalho, promovendo comunicação eficiente entre áreas técnicas e de negócio. Abaixo, tem um exemplo visual de como um processo pode ser representado em BPMN:
+
+<div align="center">
+  
+| ![Processo de Aprovação de Férias](./processo_de_aprovacao_de_ferias) |
+|:--:|
+| *Processo de Aprovação de Férias* |
+
+</div>
+
 ### Gateway
 
 Um *Gateway* é um diamante (losango) no diagrama, ele serve para controlar o caminho que o fluxo do processo vai seguir:
@@ -20,6 +30,23 @@ Um *Gateway* é um diamante (losango) no diagrama, ele serve para controlar o ca
 ### Nomeando atividades
 
 * o nomeamento das atividades precisa iniciar com verbo no infinitivo (ex: "Acessar", "Verificar", "Conferir")
+
+### AS IS e TO BE
+
+No contexto do BPMN, **“As Is”** representa o modelo do processo **como ele funciona atualmente**, mostrando suas etapas reais, gargalos e falhas existentes. Já o **“To Be”** descreve o processo **como ele deve funcionar no futuro**, após melhorias, automações ou reestruturações. Essa comparação entre o As Is e o To Be é essencial para identificar oportunidades de otimização e planejar transformações eficientes nos processos de negócio.
+
+<div align="center">
+
+| Aspecto                  | As Is (Estado Atual)                              | To Be (Estado Futuro)                              |
+|---------------------------|---------------------------------------------------|----------------------------------------------------|
+| Objetivo                 | Descrever como o processo funciona hoje           | Mostrar como o processo deve funcionar             |
+| Foco                     | Identificar problemas, gargalos e ineficiências   | Propor melhorias, automações e otimizações         |
+| Base de informação        | Observação e documentação da prática atual        | Planejamento e modelagem de novas práticas         |
+| Nível de detalhamento     | Detalhado e fiel à realidade                      | Simplificado e orientado à eficiência              |
+| Finalidade                | Entendimento e diagnóstico                        | Implementação de mudanças e melhorias              |
+| Uso no BPMN               | Mapeamento do processo existente                  | Modelagem do processo redesenhado                  |
+
+</div>
 
 ---
 
