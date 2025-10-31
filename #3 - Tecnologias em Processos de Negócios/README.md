@@ -8,7 +8,7 @@ Introdução ao BPM; Modelagem de Processos com Ênfase em Dados; Análise de Pr
 * **CH:** 30h
 
 
-O projeto desenvolvido durante a disciplina utilizou a ferramenta [Bizagi Modeler](https://www.bizagi.com/pt/plataforma/modeler).
+O projeto desenvolvido durante a disciplina utilizou as ferramentas [Bizagi Modeler](https://www.bizagi.com/pt/plataforma/modeler) e [Bizagi Studio](https://www.bizagi.com/pt/plataforma/automation).
 
 ---
 
