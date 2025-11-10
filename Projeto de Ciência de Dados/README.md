@@ -9,7 +9,7 @@ Ao longo do projeto, os participantes deverão aplicar as etapas da metodologia 
 
 <div align="center">
   
-| ![CRISP-DM](/crisp_dm.png) |
+| ![CRISP-DM](crisp_dm.png) |
 |:--:|
 | *CRISP-DM (Cross Industry Standard Process for Data Mining)* |
 
