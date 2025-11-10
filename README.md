@@ -9,6 +9,7 @@ O objetivo é organizar os conteúdos produzidos durante a residência em uma es
 
 Abaixo estão listadas as disciplinas da residência, organizadas em ordem de curso. Cada item direciona para a respectiva pasta, contendo seus materiais e projetos.
 
+* [Projeto de Ciência de Dados](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/00%20-%20Projeto%20de%20Ci%C3%AAncia%20de%20Dados)
 * [Introdução à Ciência de Dados](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/%231%20-%20Introdu%C3%A7%C3%A3o%20a%20Ci%C3%AAncia%20de%20Dados)
 * [Programação para Ciência de Dados](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/%232%20-%20Programa%C3%A7%C3%A3o%20para%20Ci%C3%AAncia%20de%20Dados)
 * [Tecnologias em Processos de Negócios](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/%233%20-%20Tecnologias%20em%20Processos%20de%20Neg%C3%B3cios)
@@ -21,7 +22,6 @@ Abaixo estão listadas as disciplinas da residência, organizadas em ordem de cu
 * Big Data
 * Análise de Séries Temporais
 * Processamento de Linguagem Natural
-* Projeto de Ciência de Dados
 
 ---
 
