@@ -755,7 +755,7 @@ print (translator)
 
 <div align="center">
   
-| ![Árvore de Decisão](./assets/CursoPython_DecisionTree.png) |
+| ![Árvore de Decisão](./CursoPython_DecisionTree.png) |
 |:--:|
 | *Árvore de Decisão para questão 23* |
 
