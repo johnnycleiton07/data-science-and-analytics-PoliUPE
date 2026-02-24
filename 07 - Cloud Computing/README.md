@@ -1,11 +1,11 @@
 ###### PT
 
-# Estatística Computacional
+# Cloud Computing
 
-Disciplina voltada ao estudo de fundamentos de Estatística Aplicada e Probabilidade, abordando probabilidade condicional, distribuições Binomial, Poisson, Exponencial e Normal, além de Intervalo de Confiança e Teste de Hipótese para média populacional. Como entrega final foi proposta lista de exercícios com questões abrangendo todos os assuntos dados.
+Serviços na nuvem com AWS.
 
-* **Professor:** [*Manoel Marinho*](http://lattes.cnpq.br/4054463794131432)
-* **CH:** 30h
+* **Professor:** [*Jorge Cavalcanti*](https://www.escavador.com/sobre/7617914/jorge-cavalcanti-barbosa-fonseca)
+* **CH:** 15h
 
 ---
 
