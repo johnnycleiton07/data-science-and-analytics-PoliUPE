@@ -1,0 +1,32 @@
+QZLbrM5l9zFW_j15lkWrhbnN2LZ-xwTZ_KR5XuGfw_k
+
+
+Docker
+johnny.cleitonws@upe.br
+04122025
+
+
+1. Inicia o app do Docker instalado
+2. Dentro da pasta clonada do GitHub inicia o Docker através do cmd
+----------
+cd Documents\GitHub\analise-transformacao-dados-upe
+
+docker-compose up -d
+----------
+3. Dentro da pasta "apache-hop" abre o app "hop-gui.bat"
+
+ 
+
+
+username: postgres
+password: apachehop
+server host name: localhost
+post number: 5433
+database name: aula
+-
+
+
+-------------
+Links:
+- Consulta de Contratos Públicos
+https://portaldatransparencia.gov.br/contratos/consulta?ordenarPor=dataFimVigencia&direcao=desc
