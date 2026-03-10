@@ -17,7 +17,7 @@ Abaixo estão listadas as disciplinas da residência, organizadas em ordem de cu
 * [Análise e Transformação de Dados](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/05%20-%20An%C3%A1lise%20e%20Transforma%C3%A7%C3%A3o%20de%20Dados)
 * [Estatística Computacional](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/06%20-%20Estat%C3%ADstica%20Computacional)
 * [Cloud Computing](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/07%20-%20Cloud%20Computing)
-* Aprendizado de Máquina Não Supervisionado
+* [Aprendizado de Máquina Não Supervisionado](https://github.com/johnnycleiton07/data-science-and-analytics-PoliUPE/tree/main/08%20-%20Aprendizado%20de%20M%C3%A1quina%20N%C3%A3o%20Supervisionado)
 * Aprendizado de Máquina Supervisionado
 * Big Data
 * Análise de Séries Temporais
